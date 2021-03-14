@@ -1,5 +1,5 @@
 * @jfvergara
 *.js @jfvergara
-*.yml @jfvergara
+*.yml @kimboicloud
 /public/ @jfvergara
 *.html @exampleuser
