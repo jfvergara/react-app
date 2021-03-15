@@ -45,7 +45,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/master' # It means that a release will be created only when there is a PUSH to Master
         run: npx semantic-release
         env:
-          GITHUB_TOKEN: ${{ GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm install -g surge
       - name: Deploy to staging
         if: github.event_name == 'push'
