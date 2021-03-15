@@ -36,11 +36,12 @@ jobs:
         if: github.event_name == 'push'
         run: npm run build
       - name: Upload build folder
+        if: github.event_name == 'push'
         uses: actions/upload-artifact@v1
         with:
           name: build
           path: build #name of the folder
-      - uses: actions/download-artifact
+      - uses: actions/download-artifact@v1
       - run: npm install -g surge
       - name: Deploy to staging
         if: github.event_name == 'push'
