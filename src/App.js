@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React (KIMBO SLICE)
+                  Learn React (KIMBO SLICE the best pet)
         </a>
       </header>
     </div>
