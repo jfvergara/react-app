@@ -1,7 +1,7 @@
 name: Notify on Issue
 on:
-  issues: 
-    types: [opened]
+  issues:
+    types: [opened, edited, milestoned]
 
 jobs:
   slack-message:
