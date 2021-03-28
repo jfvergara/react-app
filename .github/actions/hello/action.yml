@@ -1,0 +1,14 @@
+name: Hello World
+author: Kimbo Slice
+description: Some description
+inputs:
+  who-to-greet:
+    description: "Who to greet"
+    required: true
+    default: Kimbolin
+outputs:
+  time:
+    description: "The greeing time"
+runs:
+  using: "node12"
+  main: "dist/index.js"
